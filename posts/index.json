@@ -1,0 +1,18 @@
+[
+  {
+    "slug": "cout-hello-world",
+    "title": "cout<<\"hello world!!\";",
+    "date": "2025-11-11",
+    "excerpt": "still figuring out. A reflection on turning 20, growth, confusion, heartbreak, solitude, and discovery.",
+    "readingTime": "5 min read",
+    "file": "cout-hello-world.md"
+  },
+  {
+    "slug": "hello-world",
+    "title": "Shipping My Writing Workflow",
+    "date": "2026-03-27",
+    "excerpt": "How I keep writing friction low so ideas become published posts instead of unfinished drafts.",
+    "readingTime": "4 min read",
+    "file": "hello-world.md"
+  }
+]

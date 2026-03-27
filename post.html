@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post | Aasishdairel</title>
+    <meta name="description" content="Read a blog post by Aasishdairel." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Sora:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <div class="bg-grid" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="index.html">Aasishdairel</a>
+      <a class="back-link" href="blog.html">Back to all posts</a>
+    </header>
+
+    <main class="page shell">
+      <article class="post-shell reveal" id="post-shell" aria-live="polite">
+        <p id="post-meta" class="post-meta"></p>
+        <h1 id="post-title" class="post-title">Loading post...</h1>
+        <div id="post-content" class="post-content"></div>
+      </article>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="assets/effects.js" defer></script>
+    <script src="assets/blog.js" defer></script>
+  </body>
+</html>
