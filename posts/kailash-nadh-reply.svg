@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Email reply from Kailash Nadh</title>
+  <desc id="desc">A clean visual recreation of an email reply showing Kailash Nadh responding with an encouraging message.</desc>
+  <rect width="1600" height="900" fill="#f6f7f9"/>
+  <rect x="24" y="24" width="1552" height="852" rx="18" fill="#ffffff" stroke="#e4e7eb" stroke-width="2"/>
+
+  <circle cx="74" cy="76" r="34" fill="#1976d2"/>
+  <text x="74" y="87" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#ffffff">A</text>
+  <text x="128" y="78" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#202124">Aasish Dairel</text>
+  <text x="128" y="112" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#5f6368">Dear Kailash Nadh sir, My name is Aasish Dairel...</text>
+  <text x="1490" y="82" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#5f6368">Wed, Apr 1, 1:15 AM</text>
+
+  <line x1="24" y1="156" x2="1576" y2="156" stroke="#eef1f4" stroke-width="2"/>
+
+  <circle cx="74" cy="212" r="34" fill="#6d4c41"/>
+  <text x="74" y="223" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#ffffff">k</text>
+  <text x="128" y="214" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#202124">Kailash Nadh</text>
+  <text x="128" y="247" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#5f6368">to me</text>
+  <text x="1490" y="220" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#5f6368">Wed, Apr 1, 8:37 AM</text>
+
+  <rect x="104" y="290" width="1392" height="420" rx="18" fill="#ffffff" stroke="#edf0f3" stroke-width="2"/>
+  <text x="152" y="360" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#202124">Happy to hear that, Aasish. Fighting against the odds, striving for excellence despite</text>
+  <text x="152" y="404" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#202124">the odds, is what makes us human.</text>
+  <text x="152" y="488" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#202124">Wishing you all the best.</text>
+  <text x="152" y="580" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#202124">Kailash</text>
+
+  <text x="152" y="760" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#5f6368">Original message omitted for brevity</text>
+</svg>

@@ -1,33 +1,15 @@
-# Shipping My Writing Workflow
+# The Moment He Replied
 
-Publishing is mostly about reducing friction.
+There are some people who quietly shape the way you think, even if you have never met them.
 
-For this blog, I use a simple process:
+For me, Kailash Nadh, CTO of Zerodha, was one of those people. He was my inspiration and my role model. During some of the toughest times in my life, I would watch his interviews and listen to his podcasts just to remind myself to keep going. His words gave me strength when I needed it most.
 
-1. Add a new object in `posts/index.json`.
-2. Create a markdown file in `posts/`.
-3. Open the post from the homepage to verify everything looks right.
+At some point, I decided to write to him and tell him what his work had meant to me. I did not expect anything in return. I just wanted him to know that his words had reached someone on the other side of the screen and made a real difference.
 
-## Why this setup works
+Then he replied.
 
-- No CMS lock-in.
-- Markdown stays readable forever.
-- Fast to deploy on any static host.
+![Kailash Nadh replying to my email](kailash-nadh-reply.svg)
 
-## A quick template I can reuse
+That response came as a surprise, and it became one of the happiest moments of my life. It was not just about getting a reply. It was about feeling seen by someone I had admired for so long. In that moment, all the encouragement I had borrowed from him came back to me in a deeply personal way.
 
-```md
-# Post title
-
-Lead paragraph.
-
-## Main point
-
-Write the useful part here.
-
-## Closing
-
-One practical takeaway.
-```
-
-That is it. Keep publishing.
+I will always remember that day. It reminded me that small acts of kindness can stay with a person far longer than we realize, and that the people we look up to can sometimes give us more than motivation. They can give us hope.
