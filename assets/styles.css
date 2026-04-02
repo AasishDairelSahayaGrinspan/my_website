@@ -716,6 +716,15 @@ body {
   font-size: 1.02rem;
 }
 
+.post-content img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1.2rem auto;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(9, 22, 39, 0.12);
+}
+
 .post-content h2,
 .post-content h3 {
   font-family: "Fraunces", serif;
