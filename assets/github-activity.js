@@ -197,7 +197,7 @@
         return `
           <li class="gh-item">
             <p>Updated repository ${repo.name}</p>
-            <a href="${repo.html_url}" target="_blank" rel="noopener noreferrer">${repo.full_name}</a>
+            <a href="${repo.html_url}" rel="noopener noreferrer">${repo.full_name}</a>
             <span>${when}</span>
           </li>
         `;
@@ -245,7 +245,7 @@
           return `
             <li class="gh-item">
               <p>${text}</p>
-              <a href="${repoLink}" target="_blank" rel="noopener noreferrer">${event.repo?.name || "Open on GitHub"}</a>
+              <a href="${repoLink}" rel="noopener noreferrer">${event.repo?.name || "Open on GitHub"}</a>
               <span>${when}</span>
             </li>
           `;

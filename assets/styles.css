@@ -19,16 +19,29 @@ html,
 body {
   margin: 0;
   min-height: 100%;
+  width: 100%;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
   font-family: "Sora", sans-serif;
+  line-height: 1.5;
   color: var(--ink);
   background: radial-gradient(circle at 8% 12%, #eaf4ff 0%, transparent 34%),
     radial-gradient(circle at 92% 22%, #e9fff8 0%, transparent 35%),
     radial-gradient(circle at 50% 100%, #eef2ff 0%, transparent 40%),
     linear-gradient(180deg, #f9fcff 0%, #f3f8ff 52%, #f8fbff 100%);
   overflow-x: hidden;
+}
+
+img,
+svg,
+video,
+canvas {
+  max-width: 100%;
 }
 
 .bg-grid {
@@ -191,7 +204,7 @@ body {
 }
 
 .site-header {
-  width: min(1050px, calc(100vw - 2.5rem));
+  width: min(1050px, calc(100vw - clamp(1rem, 4vw, 2.5rem)));
   margin: 1.25rem auto 0;
   padding: 1rem 1.2rem;
   display: flex;
@@ -207,6 +220,8 @@ body {
   display: flex;
   align-items: center;
   gap: 0.6rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .brand {
@@ -228,9 +243,12 @@ body {
   display: flex;
   align-items: center;
   gap: 0.85rem;
+  flex-wrap: wrap;
 }
 
 .top-nav a {
+  display: inline-flex;
+  align-items: center;
   text-decoration: none;
   color: var(--ink-soft);
   font-size: 0.92rem;
@@ -250,11 +268,13 @@ body {
   display: flex;
   align-items: center;
   gap: 0.45rem;
+  flex-wrap: wrap;
 }
 
 .icon-link {
   width: 36px;
   height: 36px;
+  flex: 0 0 auto;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -290,7 +310,7 @@ body {
 }
 
 .shell {
-  width: min(1050px, calc(100vw - 2.5rem));
+  width: min(1050px, calc(100vw - clamp(1rem, 4vw, 2.5rem)));
   margin: 1.6rem auto 3rem;
 }
 
@@ -421,7 +441,7 @@ body {
 .github-grid {
   margin-top: 1rem;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 0.95rem;
 }
 
@@ -437,6 +457,7 @@ body {
   justify-content: space-between;
   align-items: baseline;
   gap: 0.75rem;
+  flex-wrap: wrap;
 }
 
 .github-card-head h3 {
@@ -479,6 +500,7 @@ body {
   margin: 0;
   color: var(--ink);
   font-size: 0.9rem;
+  overflow-wrap: anywhere;
 }
 
 .gh-item a {
@@ -586,7 +608,7 @@ body {
 .project-grid {
   margin-top: 1rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 0.9rem;
 }
 
@@ -644,6 +666,7 @@ body {
   justify-content: space-between;
   align-items: baseline;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .section-title-row h2 {
@@ -660,7 +683,7 @@ body {
 .post-list {
   margin-top: 1rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 0.9rem;
 }
 
@@ -676,6 +699,7 @@ body {
   transform: translateY(8px);
   opacity: 0;
   animation: card-in 0.45s ease forwards;
+  min-width: 0;
 }
 
 .post-card:hover {
@@ -744,6 +768,7 @@ body {
   border-radius: 12px;
   padding: 1rem;
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .post-content blockquote {
@@ -814,5 +839,79 @@ body {
   .stack-list {
     gap: 0.55rem;
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .site-header {
+    margin-top: 0.9rem;
+    padding: 0.75rem;
+  }
+
+  .brand {
+    font-size: 1.14rem;
+  }
+
+  .top-nav {
+    gap: 0.5rem;
+  }
+
+  .top-nav a {
+    font-size: 0.86rem;
+    padding: 0.36rem 0.52rem;
+  }
+
+  .icon-link {
+    width: 34px;
+    height: 34px;
+  }
+
+  .stack-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .post-content {
+    font-size: 0.97rem;
+  }
+}
+
+@media (max-height: 560px) and (orientation: landscape) {
+  .site-header {
+    margin-top: 0.6rem;
+    padding: 0.72rem 0.95rem;
+  }
+
+  .shell {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero,
+  .post-list-section,
+  .post-shell,
+  .projects-section,
+  .tech-stack-section,
+  .github-section {
+    padding: 1rem;
+  }
+
+  .bg-shape {
+    opacity: 0.4;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+
+  .reveal,
+  .post-card {
+    opacity: 1;
+    transform: none;
   }
 }

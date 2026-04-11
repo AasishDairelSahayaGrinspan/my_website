@@ -59,7 +59,7 @@ async function renderPostList() {
     listContainer.innerHTML = posts
       .map(
         (post, index) => `
-          <a class="post-card" href="post.html?slug=${encodeURIComponent(post.slug)}" target="_blank" rel="noopener noreferrer" style="animation-delay: ${index * 75}ms">
+          <a class="post-card" href="post.html?slug=${encodeURIComponent(post.slug)}" style="animation-delay: ${index * 75}ms">
             <p class="post-meta">${formatDate(post.date)} • ${post.readingTime || "5 min read"}</p>
             <h3>${post.title}</h3>
             <p class="post-excerpt">${post.excerpt}</p>
@@ -67,16 +67,6 @@ async function renderPostList() {
         `
       )
       .join("");
-
-    listContainer.querySelectorAll(".post-card").forEach((card) => {
-      card.addEventListener("click", (event) => {
-        event.preventDefault();
-        const href = card.getAttribute("href");
-        if (href) {
-          window.open(href, "_blank", "noopener,noreferrer");
-        }
-      });
-    });
 
     if (countLabel) {
       countLabel.textContent = `${posts.length} ${posts.length === 1 ? "post" : "posts"}`;
